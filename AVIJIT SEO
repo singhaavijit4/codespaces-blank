@@ -1,0 +1,22 @@
+def check_duplicates(input_list):
+    duplicates = []
+    seen = set()
+
+    for item in input_list:
+        if item in seen:
+            duplicates.append(item)
+        else:
+            seen.add(item)
+    
+    return duplicates
+
+# Example usage
+input_list = [1, 2, 3, 4, 5, 6, 2, 3, 7, 8, 9]
+duplicates = check_duplicates(input_list)
+
+if duplicates:
+    print("Duplicates found:", duplicates)
+else:
+    print("No duplicates found.")# Online Python compiler (interpreter) to run Python online.
+# Write Python 3 code in this online editor and run it.
+print("Try programiz.pro")
